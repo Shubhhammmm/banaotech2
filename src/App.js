@@ -87,68 +87,66 @@ const App = () => {
       {initial && <div style={{width: '100%', height: '100vh', backgroundColor: 'white', zIndex: '1'}}></div>}
       <div id={first_half_layer} className='firsthalf'>
           <div className='svgpos' id={first_half_layer} style={{position: 'absolute', width: '450px', height: '450px', borderRadius: '300px'}}>
-          <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg" xlinkXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 414 414" style={{enableBackground:'new 0 0 414 414', width: '430px', height: '430px', marginLeft: '10px', marginTop: '10px'}} xmlSpace="preserve">
-              <path id="Transparent_Ring" class="transrg" style={{opacity:'0.4',fill:'none',stroke:'#FFFFFF',strokeWidth:'2',strokeMiterlimit:'10',enableBackground:'new'}} d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
-                  c-47.8,0-91-19.4-122.3-50.7"></path>
-              <path id="Opaque_Ring" class="transrgwht" className='progress' stroke-dasharray="0,1000" style={{fill: 'none', stroke: 'rgb(255, 255, 255)', strokeWidth: '2', strokeMiterlimit: '10', strokeDasharray: (top_p_text[8] > 6 ? '820, 1500' : (top_p_text[8] > 5 ? '680, 1500' : (top_p_text[8] > 4 ? '555, 1500' : (top_p_text[8] > 3 ? '400, 1500' : (top_p_text[8] > 2 ? '260, 1500' : (top_p_text[8] > 1 ? '140, 1500' : '10, 1500'))))))}} d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
-                  c-47.8,0-91-19.4-122.3-50.7"></path>                   
-              <g id="Dots" class="dots-nav">
-                  <g>
-                      <path class="dotsst dotsfill" style={{fill: 'rgb(0, 146, 255)', opacity: '1'}} d="M88.8,75c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S88.1,75,88.8,75z"></path>
-                  </g>
-                  <g>
-                      <path class="dotsstro" style={{opacity: '1', fill: 'none', stroke: 'rgb(255, 255, 255)', strokeWidth: '2', strokeMiterlimit: '10'}} d="M88.8,75c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S90.9,75,88.2,75z"></path>
-                  </g>
-              </g>
-              <g id="Dots1" class="dots-nav">
-                  <g>
-                      <path class="dotsst dotsfill1" className={top_p_text[8] > 1 ? 'progressdelay' : 'normaldots'} d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z"></path>
-                  </g>
-                  <g>
-                      <path class="dotsstro1" className={top_p_text[8] > 1 ? 'progressdelay2' : 'normaldots2'} style={{fill: 'none', stroke: 'rgb(255, 255, 255)', strokeWidth: '2', strokeMiterlimit: '10'}} d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,29,206.8,29z"></path>
-                  </g>
-              </g>
-              <g id="Dots2" class="dots-nav">
-                  <g>
-                      <path class="dotsst dotsfill2" className={top_p_text[8] > 2 ? 'progressdelay' : 'normaldots'} d="M325.8,75c-4.3,1-7,3.7-7,7s3.7,7,7,7s7-3.7,7-7S328,75,325.8,75z"></path>
-                  </g>
-                  <g>
-                      <path class="dotsstro2" className={top_p_text[8] > 2 ? 'progressdelay2' : 'normaldots2'} style={{fill: 'none', stroke: 'rgb(255, 255, 255)', strokeWidth: '2', strokeMiterlimit: '10'}} d="M325.8,75c-4.3,1-7,3.7-7,7s3.7,7,7,7s7-3.7,7-7S327.9,74,325.9,75z"></path>
-                  </g>
-              </g>
-              <g id="Dots3" class="dots-nav">
-                  <g>
-                      <path class="dotsst dotsfill3" className={top_p_text[8] > 3 ? 'progressdelay' : 'normaldots'} d="M380.8,200c-4.3,1-7,3.7-7,7s3.7,7,7,7s7-3.7,7-7S385.1,200,380.8,200z"></path>
-                  </g>
-                  <g>
-                      <path class="dotsstro3" className={top_p_text[8] > 3 ? 'progressdelay2' : 'normaldots2'} style={{fill: 'none', stroke: 'rgb(255, 255, 255)', strokeWidth: '2', strokeMiterlimit: '10'}} d="M380.8,200c-4.3,1-7,3.7-7,7s3.7,7,7,7s7-3.7,7-7S380.9,199,380.8,200z"></path>
-                  </g>
-              </g>
-              <g id="Dots4" class="dots-nav">
-                  <g>
-                      <path class="dotsst dotsfill4" className={top_p_text[8] > 4 ? 'progressdelay' : 'normaldots'} d="M325.8,325c-4.3,1-7,3.7-7,7s3.7,7,7,7s7-3.7,7-7S328.1,325,325.8,325z"></path>
-                  </g>
-                  <g>
-                      <path class="dotsstro4" className={top_p_text[8] > 4 ? 'progressdelay2' : 'normaldots2'} style={{fill: 'none', stroke: 'rgb(255, 255, 255)', strokeWidth: '2', strokeMiterlimit: '10'}} d="M325.8,325c-4.3,1-7,3.7-7,7s3.7,7,7,7s7-3.7,7-7S325.1,324,327.8,326z"></path>
-                  </g>
-              </g>
-              <g id="Dots5" class="dots-nav">
-                  <g>
-                      <path class="dotsst dotsfill5" className={top_p_text[8] > 5 ? 'progressdelay' : 'normaldots'} d="M206.8,375c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,375,206.8,375z"></path>
-                  </g>
-                  <g>
-                      <path class="dotsstro5" className={top_p_text[8] > 5 ? 'progressdelay2' : 'normaldots2'} style={{fill: 'none', stroke: 'rgb(255, 255, 255)', strokeWidth: '2', strokeMiterlimit: '10'}} d="M206.8,375c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6S210.1,375,206.8,375z"></path>
-                  </g>
-              </g>
-              <g id="Dots6" class="dots-nav">
-                  <g>
-                      <path class="dotsst dotsfill6" className={top_p_text[8] > 6 ? 'progressdelay' : 'normaldots'} d="M88.8,325c-4.3,1-7,3.7-7,7s3.7,7,7,7s7-3.7,7-7S88.1,325,88.8,325z"></path>
-                  </g>
-                  <g>
-                      <path class="dotsstro6" className={top_p_text[8] > 6 ? 'progressdelay2' : 'normaldots2'} style={{fill: 'none', stroke: 'rgb(255, 255, 255)', strokeWidth: '2', strokeMiterlimit: '10'}} d="M88.8,325c-4.3,1-7,3.7-7,7s3.7,7,7,7s7-3.7,7-7S90.1,324,88.9,325z"></path>
-                  </g>
-              </g>
-          </svg>
+          <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 414 414" style="enable-background:new 0 0 414 414; width: 430px; height: 430px; margin-left: 10px; margin-top: 10px;" xml:space="preserve">
+    <path id="Transparent_Ring" className="transrg" style="opacity: 0.4; fill: none; stroke: #FFFFFF; stroke-width: 2; stroke-miterlimit: 10; enable-background: new;" d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173 c-47.8,0-91-19.4-122.3-50.7"></path>
+    <path id="Opaque_Ring" className="transrgwht progress" stroke-dasharray="0,1000" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10; stroke-dasharray: 820, 1500;" d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173 c-47.8,0-91-19.4-122.3-50.7"></path>
+    <g id="Dots" className="dots-nav">
+        <g>
+            <circle className="dotsst dotsfill" style="fill: rgb(0, 146, 255); opacity: 1;" cx="88.8" cy="75" r="6"></circle>
+        </g>
+        <g>
+            <circle className="dotsstro" style="opacity: 1; fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;" cx="88.8" cy="75" r="6"></circle>
+        </g>
+    </g>
+    <g id="Dots1" className="dots-nav">
+        <g>
+            <circle className="dotsst dotsfill1 progressdelay" cx="206.8" cy="29" r="6"></circle>
+        </g>
+        <g>
+            <circle className="dotsstro1 progressdelay2" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;" cx="206.8" cy="29" r="6"></circle>
+        </g>
+    </g>
+    <g id="Dots2" className="dots-nav">
+        <g>
+            <circle className="dotsst dotsfill2 progressdelay" cx="325.8" cy="75" r="7"></circle>
+        </g>
+        <g>
+            <circle className="dotsstro2 progressdelay2" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;" cx="325.8" cy="75" r="7"></circle>
+        </g>
+    </g>
+    <g id="Dots3" className="dots-nav">
+        <g>
+            <circle className="dotsst dotsfill3 progressdelay" cx="380.8" cy="200" r="7"></circle>
+        </g>
+        <g>
+            <circle className="dotsstro3 progressdelay2" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;" cx="380.8" cy="200" r="7"></circle>
+        </g>
+    </g>
+    <g id="Dots4" className="dots-nav">
+        <g>
+            <circle className="dotsst dotsfill4 progressdelay" cx="325.8" cy="325" r="7"></circle>
+        </g>
+        <g>
+            <circle className="dotsstro4 progressdelay2" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;" cx="325.8" cy="325" r="7"></circle>
+        </g>
+    </g>
+    <g id="Dots5" className="dots-nav">
+        <g>
+            <circle className="dotsst dotsfill5 progressdelay" cx="206.8" cy="375" r="6"></circle>
+        </g>
+        <g>
+            <circle className="dotsstro5 progressdelay2" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;" cx="206.8" cy="375" r="6"></circle>
+        </g>
+    </g>
+    <g id="Dots6" className="dots-nav">
+        <g>
+            <circle className="dotsst dotsfill6 progressdelay" cx="88.8" cy="325" r="7"></circle>
+        </g>
+        <g>
+            <circle className="dotsstro6 progressdelay2" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;" cx="88.8" cy="325" r="7"></circle>
+        </g>
+    </g>
+</svg>
           </div>
           <div style={{position: 'absolute', width: 'auto', color: 'white', marginTop: '27vh', right: '-50px'}}>
           <ReactTextTransition
@@ -236,7 +234,7 @@ const App = () => {
       </div>
     </div> : <div style={{width: '100%', height: '100%'}}>
         <OwlCarousel items={1} loop autoplay autoplayTimeout={3000} autoplaySpeed={1000} dots>
-        <div class='item' style={{width: '100%'}}>
+        <div className='item' style={{width: '100%'}}>
             <div style={{backgroundColor: '#c8c7cb', width: '100%', height: '50vh'}}>
                 <img style={{width: '225px', position:'absolute', left: '-10px', top: '7vh'}} alt='img 1' src={l1_sh_img1}/>
                 <img style={{width: '225px', position:'absolute', right: '-25px', top: '7vh'}} alt='img 2' src={l1_sh_img2}/>
@@ -249,7 +247,7 @@ const App = () => {
                 <p style={{fontWeight: '500'}}>view case study ➡</p></div>
             </div>
         </div>
-        <div class='item' style={{width: '100%'}}>
+        <div className='item' style={{width: '100%'}}>
             <div style={{backgroundColor: '#202462', width: '100%', height: '50vh'}}>
                 <img style={{width: '175px', position:'absolute', left: '10px', bottom: '50vh'}} alt='img 1' src={l2shimg1}/>
                 <img style={{width: '175px', position:'absolute', right: '10px', top: '0vh'}} alt='img 2' src={l2shimg2}/>
@@ -262,7 +260,7 @@ const App = () => {
                 <div style={{display: 'flex'}}><p style={{fontWeight: '500'}}>CASE STUDY - &nbsp;</p><p style={{width: '125px', height: '35px', textAlign: 'center', backgroundColor:'#c94a8d', borderRadius: '25px', paddingTop: '15px', fontWeight: '500', marginTop: '1px'}}>Coming Soon</p></div></div>
             </div>
         </div>
-        <div class='item' style={{width: '100%'}}>
+        <div className='item' style={{width: '100%'}}>
             <div style={{backgroundColor: '#15194a', width: '100%', height: '50vh'}}>
                 <img style={{width: '200px', position:'absolute', left: '5px', bottom: '-18vh'}} alt='img 1' src={l3shimg1}/>
                 <img style={{width: '165px', position:'absolute', right: '10px', top: '-10vh'}} alt='img 2' src={l3shimg2}/>
@@ -275,7 +273,7 @@ const App = () => {
                 <div style={{display: 'flex'}}><p style={{fontWeight: '500'}}>CASE STUDY - &nbsp;</p><p style={{width: '125px', height: '35px', textAlign: 'center', backgroundColor:'lightgray', color: 'black', borderRadius: '25px', paddingTop: '15px', fontWeight: '500', marginTop: '1px'}}>Coming Soon</p></div></div>
             </div>
         </div>
-        <div class='item' style={{width: '100%'}}>
+        <div className='item' style={{width: '100%'}}>
             <div style={{backgroundColor: '#0d121b', width: '100%', height: '50vh'}}>
                 <img style={{width: '165px', position:'absolute', left: '30px', bottom: '-10vh'}} alt='img 1' src={l4shimg1}/>
                 <img style={{width: '165px', position:'absolute', right: '10px', top: '-7vh'}} alt='img 2' src={l4shimg2}/>
@@ -289,7 +287,7 @@ const App = () => {
                 <p style={{fontWeight: '500'}}>view case study ➡</p></div>
             </div>
         </div>
-        <div class='item' style={{width: '100%'}}>
+        <div className='item' style={{width: '100%'}}>
             <div style={{backgroundColor: '#32cfeb', width: '100%', height: '50vh'}}>
                 <img style={{width: '150px', position:'absolute', left: '5px', top: '-15vh'}} alt='img 1' src={l5shimg1}/>
                 <img style={{width: '150px', position:'absolute', left: '150px', top: '-2vh'}} alt='img 2' src={l5shimg2}/>
@@ -305,7 +303,7 @@ const App = () => {
                 <p style={{fontWeight: '500'}}>view case study ➡</p></div>
             </div>
         </div>
-        <div class='item' style={{width: '100%'}}>
+        <div className='item' style={{width: '100%'}}>
             <div style={{backgroundColor: 'white', width: '100%', height: '50vh'}}>
                 <img style={{ position:'absolute', bottom: '0vh'}} alt='img 1' src={l6shimg}/>
             </div>
@@ -317,7 +315,7 @@ const App = () => {
                 <p style={{fontWeight: '500'}}>view case study ➡</p></div>
             </div>
         </div>
-        <div class='item' style={{width: '100%'}}>
+        <div className='item' style={{width: '100%'}}>
             <div style={{backgroundColor: '#4bb76a', width: '100%', height: '50vh'}}>
                 <img style={{width: '275px', zIndex:'1', position:'absolute', left: '0px', top: '6vh'}} alt='img 1' src={l7shimg1}/>
                 <img style={{width: '225px', position:'absolute', right: '0px', top: '10vh'}} alt='img 2' src={l7shimg2}/>
