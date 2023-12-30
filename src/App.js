@@ -87,7 +87,7 @@ const App = () => {
       {initial && <div style={{width: '100%', height: '100vh', backgroundColor: 'white', zIndex: '1'}}></div>}
       <div id={first_half_layer} className='firsthalf'>
           <div className='svgpos' id={first_half_layer} style={{position: 'absolute', width: '450px', height: '450px', borderRadius: '300px'}}>
-          <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 414 414" style="enable-background:new 0 0 414 414; width: 430px; height: 430px; margin-left: 10px; margin-top: 10px;" xml:space="preserve">
+          {/* <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 414 414" style="enable-background:new 0 0 414 414; width: 430px; height: 430px; margin-left: 10px; margin-top: 10px;" xml:space="preserve">
     <path id="Transparent_Ring" className="transrg" style="opacity: 0.4; fill: none; stroke: #FFFFFF; stroke-width: 2; stroke-miterlimit: 10; enable-background: new;" d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173 c-47.8,0-91-19.4-122.3-50.7"></path>
     <path id="Opaque_Ring" className="transrgwht progress" stroke-dasharray="0,1000" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10; stroke-dasharray: 820, 1500;" d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173 c-47.8,0-91-19.4-122.3-50.7"></path>
     <g id="Dots" className="dots-nav">
@@ -146,7 +146,7 @@ const App = () => {
             <circle className="dotsstro6 progressdelay2" style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 2; stroke-miterlimit: 10;" cx="88.8" cy="325" r="7"></circle>
         </g>
     </g>
-</svg>
+</svg> */}
           </div>
           <div style={{position: 'absolute', width: 'auto', color: 'white', marginTop: '27vh', right: '-50px'}}>
           <ReactTextTransition
